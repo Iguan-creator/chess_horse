@@ -59,3 +59,24 @@ function horse() {
 	}
 
 }
+
+
+ /*---более простая запись функцмм horse. */
+/*function horse() {
+	const dx = [2,1,-1,-2,-2,-1,1,2],
+		dy = [1,2,2,1,-1,-2,-2,-1];
+	document.querySelectorAll('.chess_block').forEach(function (element) {
+		element.classList.remove('active');
+		element.classList.remove('red');
+	})
+	let x = +this.dataset.x,
+		y = +this.dataset.y;
+	this.classList.add('red');
+	for (let i = 0; i < 8; i++) {
+		let xx = x + dx[i],
+			yy = y + dy[i];
+		if (xx >=0 && yy >=0 && xx < 8 && yy < 8) {
+			document.querySelector('.chess_block[data-x="' + xx + '"][data-y="' + yy + '"]').classList.add('active');
+		}
+	}
+}*/
